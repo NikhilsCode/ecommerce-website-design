@@ -1,0 +1,923 @@
+*{
+    margin:0;
+
+border:0;
+}
+
+body{
+margin:0;
+
+border:0;
+}
+#Categories,
+#langauge{
+    border: 0;
+}
+#Categories:hover{
+    background-color: rgb(244, 248, 247);
+}
+#topmost{
+    background-color: #EBEFF8;
+}
+#searchnavbtn{
+  
+        width:200px;
+        height:20px;
+        margin: 0;
+}
+.imagess{
+    padding:0px 10px;
+    height:100px;
+}
+.i1{
+    display:block;
+    position:relative;
+    top: 1%;
+    right: 1%;
+
+}
+.i2{
+    position:relative;
+    bottom: 22%;
+    right: 13%;
+    z-index: 2;
+    
+}
+.i3{
+    position:relative;
+    bottom: 6%;
+    right: 75%;
+    width: 10px;
+    background: #51469D;
+    z-index: 1;
+}
+
+@media (min-width: 767px) and (max-width:1200px) { 
+   
+    .i3{
+        position:relative;
+        bottom: 34%;
+        right: -4%;
+        width: 10px;
+        background: #51469D;
+        z-index: 1;
+    } 
+}
+
+
+#catnumber{
+  display: none;
+  justify-content: center;
+  align-items: center;
+width: 20px;
+height: 20px;
+  
+  position: relative;
+  align-items: center;
+  bottom: 22px;
+  right: 11px;
+  font-size: 10px;
+  line-height: 11px;
+  border-radius: 50%;
+  background-color: #7A4B9E;
+  color:white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main bnner div */
+
+#maindiv{
+    margin:1px;
+}
+/*  this is the banner of top part */
+.left{ 
+ width: 100%;
+
+}
+.typecata{
+   
+   background-color:#7A4B9E;
+
+}
+.typecata span{
+    display: inline-block;
+  margin:18px 10px 10px 10px;
+   
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+ 
+  
+
+
+}
+.left ul{
+    margin: 0;
+    padding: 0;   
+    
+    width: 100%; 
+    background: #FFFFFF;
+/* Light Gray Color */
+
+box-sizing: border-box;
+border-radius: 3px;
+}
+.left ul li{
+    
+   
+   border: 1px solid #EBEFF8;
+
+
+    text-decoration: none;
+    list-style: none;
+    
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 41px;
+
+
+}
+.left ul li a{
+color: #000000;
+text-decoration: none;
+}
+.left ul li button{
+   background-color: #ffffff;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+/* ======this is top right part of the banner ===== */
+
+.righttop  a{
+    text-align: center;
+  color: #000000;
+  text-decoration: none;
+
+  
+
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+
+
+
+color: #222222;
+
+}
+#getapp{
+    
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width:236px;
+   height:54px;
+   border: 0;
+   border-radius:135.8px;
+   background-color: #7A4B9E;
+
+}
+
+.imagessforapp{
+   display:inline-block;
+ 
+   width: 52px;
+   height: 40px;    
+
+}
+.i1i{
+   position: relative;
+   top: 1px;
+   
+
+
+}
+.i2i{
+   position: relative;
+   bottom: 22px;
+ left: 5px;
+z-index: 2;
+   
+}
+.i3i{
+   
+  
+   background:white;
+   position: relative;
+   bottom: 11px;
+    right: 30px;
+
+   width: 10px;
+   height: 17px;
+z-index: 1;
+
+
+   
+
+}
+
+#getapp span{
+   display:inline-block;
+   width:157px;
+   height:32px;
+
+
+
+font-style: normal;
+font-weight: 500;
+font-size: 15.5804px;
+line-height: 31px;
+
+
+
+
+color: #FFFFFF;
+
+}
+
+
+@media (max-width: 776px) { 
+    #getapp{
+     width:100%;
+     height:54px;
+    }
+ }
+
+ 
+
+/* ====this is the backgrround and changing banne part ight bottom */
+
+#bannerchange-btn{
+    margin:0px 0px 0px 50%;
+ }
+ #bottombannerr{    
+ 
+    width: 100%;
+    height:460px;
+  margin-left: 2px;
+    background-color: #EBEFF8;
+    
+   
+
+
+}
+
+  #imgaaa{
+    width: 50%;
+    height:459px;
+  
+    background-repeat: no-repeat;
+    background-position:  center;
+  }
+  #imgaaa img{
+    width: 100%;
+    height: 100%;
+ transition:2s;
+    
+
+  }
+  #firstlinebanner{
+    transition:2s;
+  }
+  #secondlinebanner{
+    transition:2s;
+  }
+#thirdlinebanner{
+  transition:2s ;
+} 
+ 
+  .circleshadow{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+
+      width: 50%;
+      height:459px;
+      background: #fddddd;
+      
+   
+      border-top-right-radius: 80%;
+  
+      border-bottom-right-radius: 80%;
+      
+     
+  
+  
+  }
+  .name{
+      
+    margin: 10px 10px 20px 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size:45px;
+  line-height: 50px;
+ 
+  color: #000000;
+  
+  }
+  .secondname{
+    margin: 10px 10px 20px 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size:28px;
+  line-height: 35px;
+ 
+  color: #000000;
+}
+  .off30{
+      font-size:17px;
+    
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      margin: 10px 10px 20px 10px;
+      color: #000000;
+      
+  
+  
+  }
+  .shopnow{
+      background: #7A4B9E;
+      border-radius: 120px;
+      margin:22px 10px 20px 10px;
+      width:175px ;
+      height:56px;
+   
+      border: 0;
+  }
+  @media (max-width: 580px) { 
+    .name{
+      
+        margin: 5px 10px 5px 10px;
+        font-style: normal;
+        font-weight: 500;
+        font-size:26px;
+        line-height: 30px;
+       
+        color: #000000;
+        
+        }
+        .secondname{
+            margin: 10px 10px 20px 10px;
+            font-style: normal;
+            font-weight: 500;
+            font-size:20px;
+            line-height: 25px;
+           
+            color: #000000;
+        }
+        .off30{
+            font-size:17px;
+          
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            margin: 10px 10px 20px 10px;
+            color: #000000;
+            
+        
+        
+        }
+ }
+
+
+
+ #firrstimgbtn{
+   width:23px;
+   height:5px;
+   background-color: #7A4B9E;
+ }
+ #secondimgbtn{
+  width:10px;
+   height:5px;
+  background-color: gray;
+}
+
+#thidimgbtn{
+  width:10px;
+   height:5px;
+  background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+ /* this is product */
+ /* this is for product */
+.product{
+  border-radius: 20px;;
+    width:90%;
+    height:100%;
+    /* margin: 5px 10.5px 5px 10.5px; */
+  
+    border: 1px solid #EBEFF8;
+box-sizing: border-box;
+
+}
+.product:hover{
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+.checked {
+    color: orange;
+  }
+  .rating{
+      display:flex;
+    justify-content: space-between;
+      margin: 10px 10px 10px 32.37px;
+
+
+  }
+  .star{
+      display:inline-block;
+      margin: 10px 0px 10px 0px;
+
+  }
+  .ratingnumber{
+    margin: 10px 0px 10px 3px;
+
+      
+
+  }
+  .productlike{
+  background-color:white;
+      border: 0;
+   
+
+  }
+  
+   
+  .productimg{
+      width: 90%;
+      height:165px;
+     
+  }
+
+
+
+  .prouctname{
+   display:inline-block;
+   padding-left: 10px;
+   padding-right: 10px;
+   margin:0px 20px 0px 10px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 41px;
+/* identical to box height, or 293% */
+
+
+/* Title Color */
+
+color: #222222;
+
+
+  }
+  
+  
+  .avability{
+    display:inline-block;
+    margin: 0px 0px 13px 10px;
+
+
+  }
+  .description{
+      
+      
+    
+  }
+  .description a{
+    padding:0px 10px 10px 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration: none;
+    cursor: pointer;
+    
+    
+    color: #000000;
+    
+  }
+  .description a:hover{
+    color:#7A4B9E;
+    text-decoration:underline;
+  }
+
+  .price{
+   margin: 10px 10px 10px 10px;
+   
+  
+
+  }
+  .earlyprice{
+    
+
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 27px;
+    text-decoration-line: line-through;
+    color: #707986;
+
+
+  }
+  .actualprie{
+
+     
+
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 27px;
+color:#7A4B9E;
+
+  }
+  .addtocart{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    width: 100%;
+    height:  56px ;
+  
+    border-radius: 120px;
+    border: 1px solid #EBEFF8;
+        box-sizing: border-box;
+    background-color: #f8eeee;
+    padding:0;
+
+  }
+  .addtocartimg{
+
+  }
+  .letteraddtocart{
+     
+  }
+
+  @media (max-width: 575px){
+      .productlike{
+          position: relative;
+          left: 80%;
+       
+      }
+      .productimg{
+        height:100px;    
+    }
+    .description a{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .actualprie{
+
+     
+
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 27px;
+        color:#7A4B9E;
+        
+          }
+  }
+
+
+
+
+
+
+
+
+  .serives{
+    display: flex;
+    flex-direction: column;
+   
+    justify-content:center;
+    border: 1px solid #EBEFF8;
+box-sizing: border-box;
+
+}
+.serivesimg{
+    width:100%;
+    height:50.02px;
+    
+
+}
+.serivesdiv{
+   
+   
+    text-align:center;
+}
+.serivesheading{
+    display: block;
+
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 28px;
+
+
+text-align: center;
+
+
+
+color: #222222;
+}
+.serivesdetails{
+ 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  
+  
+  text-align: center;
+  
+
+  
+  color: #222222;
+  
+
+}
+
+
+
+
+@media (max-width: 575px){
+    .serivesheading{
+        display: block;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    
+    
+    text-align: center;
+    
+    
+    
+    color: #222222;
+    }
+    .serivesdetails{
+     
+    
+      font-size: 12px;
+      line-height: 20px;
+      
+      
+      text-align: center;
+      
+    
+      
+      color: #222222;
+      
+    
+    }
+    
+}
+
+
+
+
+/* thi is heafing */
+.headingtitle{
+   
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    
+    /* Title Color */
+    
+    color: #222222;
+    
+  }
+  @media (max-width: 576px){
+    .headingtitle{
+    font-size: 22px;
+    line-height: 30px;
+
+    }
+   
+  }
+
+
+  /* bannerr */
+    /* this is for grocery */
+   #banner{
+       width: 100%;
+    height: 289px;
+    background-color: #ebcdcd;
+    }
+    
+   
+  
+      .smalltitle{
+            font-style: normal;
+        font-weight: 500;
+        font-size: 16.6972px;
+        line-height: 20px;
+      
+        
+        
+        color: #000000;
+        
+    
+      }
+      .bigtitle{
+        text-transform: uppercase;
+        letter-spacing: 10px;
+       
+        font-style: normal;
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 134.1%;
+    
+        
+        
+        color: #000000;
+        
+    
+      }
+      #grocerybtn{
+          
+
+        
+      }
+      #groceryimg{
+        width: 70%;
+        height: 100%;
+     
+      
+        
+      }
+      .shapesemcircle{
+          padding-left:5px ;
+          display:flex;
+          flex-direction: column;
+        justify-content: center;
+          
+          width: 100%;
+          height: 288px;
+          background-color: rgb(250, 250, 250);
+          border-top-right-radius: 80%;
+    
+          border-bottom-right-radius: 80%;
+          z-index:0;
+          
+      }
+    
+   @media (max-width: 610px){
+    .smalltitle{
+       
+    font-size: 15px;
+    line-height: 18px;
+  
+    
+    
+    color: #000000;
+    
+
+  }
+  .bigtitle{
+    
+    letter-spacing: 5px;
+   
+   
+    font-size: 22px;
+    line-height: 28px;
+
+    
+   
+    
+
+  }
+   }
+
+
+
+
+
+   /* ===========the company names */
+   .company{
+       width: 90%;
+       height: 100px;
+
+   }
+
+
+
+
+
+
+  
+ 
+  
+
+ 
+  
+  .companylogo{
+   
+    margin: 0px 10.5px 0px 10.5px;
+    background: #FFFFFF;
+  
+    
+    border: 1px solid #EBEFF8;
+    box-sizing: border-box;
+  }
+.companylogo:hover{
+  
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  
+}
+  .companylogoimg{
+    width: 100%;
+    height: 100%;
+  
+   
+  }
+
+
+
+
+
+
+  /*   footer */
+  
+ /* this for footer logo  */
+ .imagessforfooter{
+    display:inline-block;
+  
+    margin: 0px 0px 3px 4px;
+    width: 52px;
+    height: 52px;
+    
+}
+.i1ii{
+    position: relative;
+    top: 1px;
+    left: 4px;
+    
+
+
+}
+.i2ii{
+    position: relative;
+    bottom: 21px;
+    left: 8px;
+z-index: 2;
+    
+}
+.i3ii{
+    
+    position: relative;
+    bottom: 6px;
+    right: 25px;
+    background: #51469D;
+    width: 10px;
+    height: 17px;
+z-index: 1;
+    
+
+
+}
+.imgfooter{
+    width: 100px;
+    height: 50px;
+ 
+    border-radius:4px;
+}
+

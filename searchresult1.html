@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/84da2e7d04.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="searchresult1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Montserrat:wght@200;300;400&display=swap"
+        rel="stylesheet">
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <style>
+        * {
+            font-family: 'Mohave', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+
+        .colorpurple {
+            color: purple;
+        }
+
+        #bbb {
+
+            background-color: #7A4B9E;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- -------------this is top mosst bar--------------- -->
+    <div class="" id="topmost">
+        <div class=" row m-0 ">
+            <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                <a href=""> <span class="colorpurple"><i class="bi bi-send-fill"></i>Free shipping on orders
+                        $499</span></a>
+            </div>
+            <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                <div class="btn-group">
+                    <select name="langauge" id="langauge">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+
+                    </select>
+
+                    <span class="ml-5"> <a href="termsandcondition.html"><span class="colorpurple">| Terms and
+                                Conditions</span></a></span>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ---------------------this is nv bar------------- -->
+
+
+    <div class="container mt-5 mb-4 bg-light">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-3 col-md-3  d-flex justify-content-center">
+                <div class="d-flex flex-row">
+                    <div class="imagess">
+                        <img src="\img/log1.svg" alt="" class="i1">
+                        <img src="\img/3.svg" alt="" class="i2">
+                        <img src="\img/4.svg" alt="" class="i3">
+
+                    </div>
+                    <h2>Purveyor</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-7   ">
+                <div class="row">
+                    <div class="col-md-5 col-xs-12 d-flex justify-content-center">
+                        <form class="form-inline">
+                            <div class="searchhead ">
+
+                                <select name="Categories" id="Categories">
+                                    <option value="AllCategories">All Categories</option>
+                                    <option value="electronic">electronic</option>
+                                    <option value="food">Food</option>
+                                </select>
+                                <span class="d-md-inline d-sm-none d-none">|</span>
+
+                            </div>
+
+                    </div>
+                    <div class="col-md-6 col-xs-12 ml-4 d-flex justify-content-center">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-8 ">
+                                <input class="border-0 " id="searchnavbtn" type="search" placeholder="Search"
+                                    aria-label="Search">
+                            </div>
+                            <div class="col-4">
+                                <button class="btn " type="submit"><i class="bi bi-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 pt-2 d-flex justify-content-center ">
+                <a href="pofile-11.html" class="mr-2 ml-2 text-dark"> <i class="bi bi-person-fill"></i></a>
+                <a href="cart1.html" class="mr-2 ml-2 text-dark"><i class="bi bi-bag"> <span id="catnumber">6</span></i></a>
+                <a href="order-wishlist1.html" class="mr-2 ml-2 text-dark"><i class="bi bi-heart"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let cartnumber = 0;
+
+        function cartadd() {
+            cartnumber = cartnumber + 1;
+            if (cartnumber > 0) {
+
+                let cartdiv = document.getElementById("catnumber");
+                cartdiv.innerHTML = cartnumber;
+                cartdiv.style.display = "inline-flex";
+
+            }
+        }
+    </script>
+
+
+    <!-- this for showing paths of link -->
+    <div class="container">
+        <div class="row justify-content-between bg-light">
+            <div class="link text-center col-12 col-md-4">
+                <span class="pathlink"> <a href="home.html">Home</a> </span>
+                <span class="pathlink">></span>
+                <span class="pathlink"> <a href="">Shop</a> </span>
+                <span class="pathlink">></span>
+                <span class="pathlink"> <a href="">Food Item</a> </span>
+                <span class="pathlink">></span>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <button type="button" id="fliterbtn" class="d-block d-lg-none" onclick="fliterdiv()">
+                    Filter
+                </button>
+                <select name="sortby" id="sortby">
+                    <option value="Defaultsorting">Default sorting</option>
+                    <option value="SortByLatest">Sort By Latest</option>
+                    <option value="Sortbyaveragerating">Sort by average rating</option>
+                    <option value="Sortbyprice:lowtohigh">Sort by price: low to high</option>
+
+                    <option value="Sortbyrice:hightolow">Sort by price: high to low</option>
+
+
+
+
+                </select>
+            </div>
+        </div>
+    </div>
+    <script>
+        let q = 0;
+
+
+        function fliterdiv() {
+            if (q == 0) {
+                document.getElementById("collapseExample").style.display = "block";
+                q = 1;
+                return;
+            }
+            if (q == 1) {
+                document.getElementById("collapseExample").style.display = "none";
+                q = 0;
+                return;
+            }
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row justify-content-around p-0 m-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col-lg-3 col-12 " id="collapseExample">
+
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="categorysearch">
+                            <form action="">
+
+
+
+
+                                <div class="allcategory">
+                                    <span class="nameheading">All Categories</span>
+                                    <div class="check">
+                                        <input type="checkbox" id="Bakery" name="Bakery" value="Bakery">
+                                        <label for="Bakery"> Bakery </label>
+                                        <span class="prouctnumber">(21)</span>
+                                    </div>
+
+                                    <div class="check">
+                                        <input type="checkbox" id="Seefood" name="Seefood" value="Seefood">
+                                        <label for="Seefood"> Seefood </label>
+                                        <span class="prouctnumber">(21)</span>
+                                    </div>
+
+                                    <div class="check">
+                                        <input type="checkbox" id="Dairy" name="Dairy" value="Dairy">
+                                        <label for="Dairy"> Dairy </label>
+                                        <span class="prouctnumber">(21)</span>
+                                    </div>
+
+                                    <div class="check">
+                                        <input type="checkbox" id="Meet" name="Meet" value="Meet">
+                                        <label for="Meet"> Meet </label>
+                                        <span class="prouctnumber">(21)</span>
+                                    </div>
+
+                                    <div class="check">
+                                        <input type="checkbox" id="Coffee" name="Coffee" value="Coffee">
+                                        <label for="Coffee"> Coffee </label>
+                                        <span class="prouctnumber">(21)</span>
+                                    </div>
+
+                                </div>
+                                <!-- price fillter------------------ -->
+                                <div class="pricefliter">
+                                    <div class="wrapper">
+                                        <header>
+                                            <span class="nameheading">Price Range</span>
+
+                                        </header>
+                                        <div class="price-input">
+                                            <div class="field">
+
+                                                <input type="number" class="input-min" value="2500">
+                                                <span>$</span>
+                                            </div>
+                                            <div class="separator">-</div>
+                                            <div class="field">
+
+                                                <input type="number" class="input-max" value="7500">
+                                                <span>$</span>
+                                            </div>
+                                        </div>
+                                        <div class="slider">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <div class="range-input">
+                                            <input type="range" class="range-min" min="0" max="10000" value="2500"
+                                                step="100">
+                                            <input type="range" class="range-max" min="0" max="10000" value="7500"
+                                                step="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="numberofproductasrating">
+                                    <span class="nameheading">Ratings</span>
+
+
+                                    <div class="productbrandstar">
+
+                                        <div class="star5">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <spam class="numberrating">(200)</spam>
+                                        </div>
+                                        <div class="star4">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <spam class="numberrating">(10)</spam>
+                                        </div>
+                                        <div class="star3">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <spam class="numberrating">(29)</spam>
+                                        </div>
+                                        <div class="star2">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <spam class="numberrating">(30)</spam>
+                                        </div>
+                                        <div class="star1">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star "></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <spam class="numberrating">(10)</spam>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+
+
+
+
+
+                                <div class="brandname">
+                                    <span class="nameheading">Product Brand</span>
+                                    <div class="check">
+                                        <input type="checkbox" id="Burrys " name="Burrys " value="Burrys ">
+                                        <label for="Burrys "> Burry's </label>
+                                        <span class="prouctnumber">(10)</span>
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="Almdudler" name="Almdudler" value="Almdudler">
+                                        <label for="Almdudler"> Almdudler </label>
+                                        <span class="prouctnumber">(2)</span>
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="Pran " name="Pran " value="Pran ">
+                                        <label for="Pran "> Pran </label>
+                                        <span class="prouctnumber">(21)</span>
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="Frugo " name="Frugo " value="Frugo ">
+                                        <label for="Frugo "> Frugo </label>
+                                        <span class="prouctnumber">(21)</span>
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="Mirinda " name="Mirinda " value="Mirinda ">
+                                        <label for="Mirinda "> Mirinda </label>
+                                        <span class="prouctnumber">(10)</span>
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="Polarbröd " name="Polarbröd " value="Polarbröd ">
+                                        <label for="Polarbröd "> Polarbröd </label>
+                                        <span class="prouctnumber">(21)</span>
+                                    </div>
+                                    <div class="check">
+                                        <input type="checkbox" id="Nutrimato" name="Nutrimato " value="Nutrimato ">
+                                        <label for="Nutrimato "> Nutrimato </label>
+                                        <span class="prouctnumber">(10)</span>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="col-9">
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="col-lg-9 col-12">
+                <div class="productdispaly">
+
+
+                    <!-- ?this is the card for poduct -->
+
+
+                    <div class="row align-items-center mt-3">
+
+
+
+                        <div class="col-3 col-sm-2 ">
+                            <img src="\hey.png" class="productimg">
+                        </div>
+
+                        <div class="col-9 col-sm-6">
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <span class="typeandstck">Bakery / Chocolate</span>
+                                        </div>
+                                        <div class="col-12  col-sm-6">
+                                            <span class="typeandstck">In Stock :10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <div>
+
+
+                                        <button class="productlike " id="btn4" onclick="heart()"><i
+                                                class="fa-regular fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="poductname"> CLoud mil chocolate caramel wholesale TradeliLoud
+                                    mil chocolate caramel </span>
+                            </div>
+
+
+                            <div class="row align-items-center ">
+
+                                <div class="col-8 col-md-4 ">
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span>4.95</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4  mt-3">
+                            <div class="row justify-content-center align-items-center">
+                                <div class=" col-4 col-sm-12 d-flex justify-content-md-end justify-content-end">
+                                    <div class=" mt-3 mb-3">
+                                        <span class="withoutdiscount">$123</span>
+                                        <span class="productdetailprice">$123</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-12 justify-content-center  " onclick="cartadd()">
+                                    <button class="addtocart"> <i class="bi bi-cart mr-3"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <script>
+                        let heartclick = document.querySelector("#btn4");
+                        let y = false;
+                        function heart() {
+
+                            if (y == false) {
+                                let x = `<span class="bi bi-heart-fill fa" style="color:red; "></span>  `;
+                                heartclick.innerHTML = x;
+                                y = true;
+
+                            }
+                            else {
+                                let x = `<i class="fa-regular fa-heart"></i>`;
+                                heartclick.innerHTML = x;
+                                y = false;
+                            }
+                        }
+                    </script>
+
+                    <!-- ends here -->
+
+                    <div class="row align-items-center mt-3">
+
+
+
+                        <div class="col-3 col-sm-2 ">
+                            <img src="\hey.png" class="productimg">
+                        </div>
+
+                        <div class="col-9 col-sm-6">
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <span class="typeandstck">Bakery / Chocolate</span>
+                                        </div>
+                                        <div class="col-12  col-sm-6">
+                                            <span class="typeandstck">In Stock :10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <div>
+
+
+                                        <button class="productlike " id="btn4"><i
+                                                class="fa-regular fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="poductname"> CLoud mil chocolate caramel wholesale TradeliLoud
+                                    mil chocolate caramel </span>
+                            </div>
+
+
+                            <div class="row align-items-center ">
+
+                                <div class="col-8 col-md-4 ">
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span>4.95</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4  mt-3">
+                            <div class="row justify-content-center align-items-center">
+                                <div class=" col-4 col-sm-12 d-flex justify-content-md-end justify-content-end">
+                                    <div class=" mt-3 mb-3">
+                                        <span class="withoutdiscount">$123</span>
+                                        <span class="productdetailprice">$123</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-12 justify-content-center  " onclick="cartadd()">
+                                    <button class="addtocart"> <i class="bi bi-cart mr-3"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+                    <div class="row align-items-center mt-3">
+
+
+
+                        <div class="col-3 col-sm-2 ">
+                            <img src="\hey.png" class="productimg">
+                        </div>
+
+                        <div class="col-9 col-sm-6">
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <span class="typeandstck">Bakery / Chocolate</span>
+                                        </div>
+                                        <div class="col-12  col-sm-6">
+                                            <span class="typeandstck">In Stock :10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <div>
+
+
+                                        <button class="productlike " id="btn4"><i
+                                                class="fa-regular fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="poductname"> CLoud mil chocolate caramel wholesale TradeliLoud
+                                    mil chocolate caramel </span>
+                            </div>
+
+
+                            <div class="row align-items-center ">
+
+                                <div class="col-8 col-md-4 ">
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span>4.95</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4  mt-3">
+                            <div class="row justify-content-center align-items-center">
+                                <div class=" col-4 col-sm-12 d-flex justify-content-md-end justify-content-end">
+                                    <div class=" mt-3 mb-3">
+                                        <span class="withoutdiscount">$123</span>
+                                        <span class="productdetailprice">$123</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-12 justify-content-center  " onclick="cartadd()">
+                                    <button class="addtocart"> <i class="bi bi-cart mr-3"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="row align-items-center mt-3">
+
+
+
+                        <div class="col-3 col-sm-2 ">
+                            <img src="\hey.png" class="productimg">
+                        </div>
+
+                        <div class="col-9 col-sm-6">
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <span class="typeandstck">Bakery / Chocolate</span>
+                                        </div>
+                                        <div class="col-12  col-sm-6">
+                                            <span class="typeandstck">In Stock :10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <div>
+
+
+                                        <button class="productlike " id="btn4"><i
+                                                class="fa-regular fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="poductname"> CLoud mil chocolate caramel wholesale TradeliLoud
+                                    mil chocolate caramel </span>
+                            </div>
+
+
+                            <div class="row align-items-center ">
+
+                                <div class="col-8 col-md-4 ">
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span>4.95</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4  mt-3">
+                            <div class="row justify-content-center align-items-center">
+                                <div class=" col-4 col-sm-12 d-flex justify-content-md-end justify-content-end">
+                                    <div class=" mt-3 mb-3">
+                                        <span class="withoutdiscount">$123</span>
+                                        <span class="productdetailprice">$123</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-12 justify-content-center  " onclick="cartadd()">
+                                    <button class="addtocart"> <i class="bi bi-cart mr-3"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="row align-items-center mt-3">
+
+
+
+                        <div class="col-3 col-sm-2 ">
+                            <img src="\hey.png" class="productimg">
+                        </div>
+
+                        <div class="col-9 col-sm-6">
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <span class="typeandstck">Bakery / Chocolate</span>
+                                        </div>
+                                        <div class="col-12  col-sm-6">
+                                            <span class="typeandstck">In Stock :10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <div>
+
+
+                                        <button class="productlike " id="btn4"><i
+                                                class="fa-regular fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="poductname"> CLoud mil chocolate caramel wholesale TradeliLoud
+                                    mil chocolate caramel </span>
+                            </div>
+
+
+                            <div class="row align-items-center ">
+
+                                <div class="col-8 col-md-4 ">
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span>4.95</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4  mt-3">
+                            <div class="row justify-content-center align-items-center">
+                                <div class=" col-4 col-sm-12 d-flex justify-content-md-end justify-content-end">
+                                    <div class=" mt-3 mb-3">
+                                        <span class="withoutdiscount">$123</span>
+                                        <span class="productdetailprice">$123</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-12 justify-content-center  " onclick="cartadd()">
+                                    <button class="addtocart"> <i class="bi bi-cart mr-3"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="row align-items-center mt-3">
+
+
+
+                        <div class="col-3 col-sm-2 ">
+                            <img src="\hey.png" class="productimg">
+                        </div>
+
+                        <div class="col-9 col-sm-6">
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <span class="typeandstck">Bakery / Chocolate</span>
+                                        </div>
+                                        <div class="col-12  col-sm-6">
+                                            <span class="typeandstck">In Stock :10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <div>
+
+
+                                        <button class="productlike " id="btn4"><i
+                                                class="fa-regular fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="poductname"> CLoud mil chocolate caramel wholesale TradeliLoud
+                                    mil chocolate caramel </span>
+                            </div>
+
+
+                            <div class="row align-items-center ">
+
+                                <div class="col-8 col-md-4 ">
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span>4.95</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4  mt-3">
+                            <div class="row justify-content-center align-items-center">
+                                <div class=" col-4 col-sm-12 d-flex justify-content-md-end justify-content-end">
+                                    <div class=" mt-3 mb-3">
+                                        <span class="withoutdiscount">$123</span>
+                                        <span class="productdetailprice">$123</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-12 justify-content-center  " onclick="cartadd()">
+                                    <button class="addtocart"> <i class="bi bi-cart mr-3"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="row align-items-center mt-3">
+
+
+
+                        <div class="col-3 col-sm-2 ">
+                            <img src="\hey.png" class="productimg">
+                        </div>
+
+                        <div class="col-9 col-sm-6">
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <span class="typeandstck">Bakery / Chocolate</span>
+                                        </div>
+                                        <div class="col-12  col-sm-6">
+                                            <span class="typeandstck">In Stock :10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <div>
+
+
+                                        <button class="productlike " id="btn4"><i
+                                                class="fa-regular fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="poductname"> CLoud mil chocolate caramel wholesale TradeliLoud
+                                    mil chocolate caramel </span>
+                            </div>
+
+
+                            <div class="row align-items-center ">
+
+                                <div class="col-8 col-md-4 ">
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span>4.95</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4  mt-3">
+                            <div class="row justify-content-center align-items-center">
+                                <div class=" col-4 col-sm-12 d-flex justify-content-md-end justify-content-end">
+                                    <div class=" mt-3 mb-3">
+                                        <span class="withoutdiscount">$123</span>
+                                        <span class="productdetailprice">$123</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-12 justify-content-center  " onclick="cartadd()">
+                                    <button class="addtocart"> <i class="bi bi-cart mr-3"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="row align-items-center mt-3">
+
+
+
+                        <div class="col-3 col-sm-2 ">
+                            <img src="\hey.png" class="productimg">
+                        </div>
+
+                        <div class="col-9 col-sm-6">
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <span class="typeandstck">Bakery / Chocolate</span>
+                                        </div>
+                                        <div class="col-12  col-sm-6">
+                                            <span class="typeandstck">In Stock :10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <div>
+
+
+                                        <button class="productlike " id="btn4"><i
+                                                class="fa-regular fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="poductname"> CLoud mil chocolate caramel wholesale TradeliLoud
+                                    mil chocolate caramel </span>
+                            </div>
+
+
+                            <div class="row align-items-center ">
+
+                                <div class="col-8 col-md-4 ">
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span>4.95</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4  mt-3">
+                            <div class="row justify-content-center align-items-center">
+                                <div class=" col-4 col-sm-12 d-flex justify-content-md-end justify-content-end">
+                                    <div class=" mt-3 mb-3">
+                                        <span class="withoutdiscount">$123</span>
+                                        <span class="productdetailprice">$123</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-12 justify-content-center  " onclick="cartadd()">
+                                    <button class="addtocart"> <i class="bi bi-cart mr-3"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="row align-items-center mt-3">
+
+
+
+                        <div class="col-3 col-sm-2 ">
+                            <img src="\hey.png" class="productimg">
+                        </div>
+
+                        <div class="col-9 col-sm-6">
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <span class="typeandstck">Bakery / Chocolate</span>
+                                        </div>
+                                        <div class="col-12  col-sm-6">
+                                            <span class="typeandstck">In Stock :10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <div>
+
+
+                                        <button class="productlike " id="btn4"><i
+                                                class="fa-regular fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="poductname"> CLoud mil chocolate caramel wholesale TradeliLoud
+                                    mil chocolate caramel </span>
+                            </div>
+
+
+                            <div class="row align-items-center ">
+
+                                <div class="col-8 col-md-4 ">
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span>4.95</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4  mt-3">
+                            <div class="row justify-content-center align-items-center">
+                                <div class=" col-4 col-sm-12 d-flex justify-content-md-end justify-content-end">
+                                    <div class=" mt-3 mb-3">
+                                        <span class="withoutdiscount">$123</span>
+                                        <span class="productdetailprice">$123</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-12 justify-content-center  " onclick="cartadd()">
+                                    <button class="addtocart"> <i class="bi bi-cart mr-3"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="row align-items-center mt-3">
+
+
+
+                        <div class="col-3 col-sm-2 ">
+                            <img src="\hey.png" class="productimg">
+                        </div>
+
+                        <div class="col-9 col-sm-6">
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <span class="typeandstck">Bakery / Chocolate</span>
+                                        </div>
+                                        <div class="col-12  col-sm-6">
+                                            <span class="typeandstck">In Stock :10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <div>
+
+
+                                        <button class="productlike " id="btn4"><i
+                                                class="fa-regular fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="poductname"> CLoud mil chocolate caramel wholesale TradeliLoud
+                                    mil chocolate caramel </span>
+                            </div>
+
+
+                            <div class="row align-items-center ">
+
+                                <div class="col-8 col-md-4 ">
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span>4.95</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4  mt-3">
+                            <div class="row justify-content-center align-items-center">
+                                <div class=" col-4 col-sm-12 d-flex justify-content-md-end justify-content-end">
+                                    <div class=" mt-3 mb-3">
+                                        <span class="withoutdiscount">$123</span>
+                                        <span class="productdetailprice">$123</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-12 justify-content-center  " onclick="cartadd()">
+                                    <button class="addtocart"> <i class="bi bi-cart mr-3"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5 col-12 text-center">
+                        <spam class="productoutoftotal">Showing 1–16 of 40 results</spam>
+                    </div>
+                    <div class="col-md-5 col-12 ">
+                        <div class="pagebutton">
+                            <button class="previus"><img src="\img/backwardarrow.svg" alt=""></buttun>
+                                <button class="pagenumber">1</button>
+                                <button class="pagenumber">2</button>
+                                <button class="pagenumber">...</button>
+                                <button class="pagenumber">31</button>
+
+
+
+                                <button class="next"><img src="\img/forararrow.svg" alt=""></buttun>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class=" text-center text-lg-start w-100 " id="bbb">
+        <!-- Grid container -->
+        <div class="container p-5 mt-3" id="bbb">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+                    <div class="d-flex" id="logo">
+                        <div class="imagessforfooter">
+                            <img src="\img/wwhitelogo1.svg" alt="" class="i1ii">
+                            <img src="\img/3.svg" alt="" class="i2ii">
+                            <img src="\img/4.svg" alt="" class="i3ii">
+
+
+                        </div>
+                        <h5 class="text-uppercase text-left text-white">PURVEYOR</h5>
+                    </div>
+                    <ul class="list-unstyled mb-0">
+                        <li class=" text-left text-white">
+                            <i class="bi bi-geo-alt"></i>
+                            121 Lorem Ipsum dumy street road, California, USA
+                        </li>
+                        <li class="text-left text-white">
+                            <i class="bi bi-telephone"></i>
+                            123.234.124
+                        </li>
+                        <li class="text-left text-white">
+                            <i class="bi bi-envelope"></i>
+                            Sales@purveyor.com
+                        </li>
+
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-3 mb-4 mb-md-0 ">
+                    <h5 class="text-uppercase text-left text-white mb-0">My Account</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="text-left">
+                            <a href="pofile-11.html" class="text-left text-white">My Account
+                            </a>
+                        </li>
+                        <li class="text-left">
+                            <a href="" class="text-left text-white"> Contact</a>
+                        </li>
+                        <li class="text-left">
+                            <a href="cart1.html" class="text-left text-white"> Shopping cart</a>
+                        </li>
+                        <li class="text-left">
+                            <a href="index.html" class="text-left text-white">Shop
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-3 mb-4 mb-md-0 ">
+                    <h5 class="text-uppercase text-left text-white ">Customer Care</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li class="text-left">
+                            <a href="#!" class=" text-white">Help Center</a>
+                        </li>
+
+                        <li class="text-left">
+                            <a href="order-torecieve.html" class=" text-white"> Returns & Refunds</a>
+                        </li>
+                        <li class="text-left">
+                            <a href="" class="text-left text-white"> Contact Us</a>
+                        </li>
+                        <li class="text-left">
+                            <a href="termsandcondition.html" class="text-left text-white"> Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-3 mb-4 mb-md-0 ">
+                    <h5 class="text-uppercase text-left text-white ">Download App</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class=" row ">
+                                <div class="col-5   m-1"> <a href=""> <img
+                                            src="\WhatsApp Image 2022-05-01 at 12.21.59 PM.jpeg" class="imgfooter"></a>
+                                </div>
+                                <div class="col-5 m-1"> <a href=""><img
+                                            src="\WhatsApp Image 2022-05-01 at 12.22.00 PM.jpeg" class="imgfooter"></a>
+                                </div>
+
+                            </div>
+                        </li>
+
+
+                        <li class="text-left">
+                            <h5 class="text-uppercase text-white mb-0 mt-2 mb-2">Earn With Daraz</h5>
+
+                        </li>
+                        <li class="text-left">
+                            <a href="#!" class="text-left text-white ">Sell on Purveyor </a>
+                        </li>
+                        <li class="text-left">
+                            <a href="#!" class=" text-white text-left "> Join the Affiliate Program</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:Purveyor. All Rights Reserved.
+
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="\searchpage.js">
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

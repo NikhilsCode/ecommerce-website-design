@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stylemodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+            color: orange;
+        }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+       review
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel" style="color:#7A4B9E">Write A Review</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="">
+                    <div class="modal-body">
+
+
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="" alt="" style="width:60px; height:60px;"> 
+                            </div>
+                            <div class="col-10">
+                                <span>Tom Parker Creamery Free Range Chocolate Milk 250ml</span>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row mt-3 justify-content-between">
+
+                            <div class="col-3">
+                                <span> Rating </span>
+                            </div>
+
+
+
+                            <div class="col-5">
+                                <input type="radio" name="rate" id="rate-5" value="1">
+                                <label for="rate-5" onclick="star1rating()" id="label1"><span
+                                        class="fa fa-star"></span></label>
+                                <input type="radio" name="rate" id="rate-4" value="2">
+                                <label for="rate-4" onclick="star2rating()" id="label2"><span
+                                        class="fa fa-star"></span></label>
+                                <input type="radio" name="rate" id="rate-3" value="3">
+                                <label for="rate-3" onclick="star3rating()" id="label3"><span
+                                        class="fa fa-star"></span></label>
+                                <input type="radio" name="rate" id="rate-2" value="4">
+                                <label for="rate-2" onclick="star4rating()" id="label4"><span
+                                        class="fa fa-star"></span></label>
+                                <input type="radio" name="rate" id="rate-1" value="5" onclick="star5rating()">
+                                <label for="rate-1" onclick="star5rating()" id="label5"><span
+                                        class="fa fa-star"></span></label>
+
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+
+                            <div class="col-12"><label for="reviewwords">Share your experience</label></div>
+                            <div class="col-12">
+                                <textarea cols="60" placeholder="Describe your experience.."
+                                    id="reviewwords"></textarea>
+                          
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="modal-footer">
+                        <input type="submit" id="submit" value="Share Review" class="btn btn-primary"
+                            style="background-color:#7A4B9E; color:white">
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let x1 = document.getElementById("label1");
+        let x2 = document.getElementById("label2");
+        let x3 = document.getElementById("label3");
+        let x4 = document.getElementById("label4");
+        let x5 = document.getElementById("label5");
+        function star5rating() {
+            let z = `<span class="fa fa-star"></span>`;
+            let y = `<span class="fa fa-star checked"></span>`
+            x1.innerHTML = y;
+            x2.innerHTML = y;
+            x3.innerHTML = y;
+            x4.innerHTML = y;
+            x5.innerHTML = y;
+
+        }
+        function star4rating() {
+            let z = `<span class="fa fa-star"></span>`;
+            let y = `<span class="fa fa-star checked"></span>`
+            x1.innerHTML = y;
+            x2.innerHTML = y;
+            x3.innerHTML = y;
+            x4.innerHTML = y;
+            x5.innerHTML = z;
+
+        }
+        function star3rating() {
+            let z = `<span class="fa fa-star"></span>`;
+            let y = `<span class="fa fa-star checked"></span>`
+            x1.innerHTML = y;
+            x2.innerHTML = y;
+            x3.innerHTML = y;
+            x4.innerHTML = z;
+            x5.innerHTML = z;
+
+        }
+        function star2rating() {
+            let z = `<span class="fa fa-star"></span>`;
+            let y = `<span class="fa fa-star checked"></span>`
+            x1.innerHTML = y;
+            x2.innerHTML = y;
+            x3.innerHTML = z;
+            x4.innerHTML = z;
+            x5.innerHTML = z;
+
+        }
+        function star1rating() {
+            let z = `<span class="fa fa-star"></span>`;
+            let y = `<span class="fa fa-star checked"></span>`
+            x1.innerHTML = y;
+            x2.innerHTML = z;
+            x3.innerHTML = z;
+            x4.innerHTML = z;
+            x5.innerHTML = z;
+
+        }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

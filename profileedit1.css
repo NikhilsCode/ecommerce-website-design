@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+  
+    border: 0;
+  }
+  
+  body {
+    margin: 0;
+  
+    border: 0;
+  }
+  body a:hover{
+    color:#7A4B9E;
+   
+  
+  }
+  #Categories,
+  #langauge {
+    border: 0;
+  }
+  
+  #Categories:hover {
+    background-color: rgb(244, 248, 247);
+  }
+  
+  #topmost {
+    background-color: #EBEFF8;
+  }
+  
+  #searchnavbtn {
+  
+    width: 200px;
+    height: 20px;
+    margin: 0;
+  }
+  
+  .imagess {
+    padding: 0px 10px;
+    height: 100px;
+  }
+  
+  .i1 {
+    display: block;
+    position: relative;
+    top: 1%;
+    right: 1%;
+  
+  }
+  
+  .i2 {
+    position: relative;
+    bottom: 22%;
+    right: 13%;
+    z-index: 2;
+  
+  }
+  
+  .i3 {
+    position: relative;
+    bottom: 6%;
+    right: 75%;
+    width: 10px;
+    background: #51469D;
+    z-index: 1;
+  }
+  
+  @media (min-width: 767px) and (max-width:1200px) {
+  
+    .i3 {
+      position: relative;
+      bottom: 34%;
+      right: -4%;
+      width: 10px;
+      background: #51469D;
+      z-index: 1;
+    }
+  }
+  
+  
+  
+  
+  .btnnavclose{
+    height:20px;
+    background-color: white;  
+  }
+  
+  .maiancontainer{
+    display:flex;
+  
+  }
+  
+  
+  #pofilenavbaar {
+   
+    width: 30%;
+  }
+  
+  #pofilenavbaar ul li {
+    list-style-type: none;
+  }
+  
+  #maincontent {
+   
+    width: 70%;
+  }
+  .linkname{
+  font-weight: 700;
+  }
+  @media (max-width:992px) {
+  
+    .maiancontainer{
+      display:block;
+    }
+    
+    #pofilenavbaar {
+   border:1px solid rgb(247, 240, 240);
+   border-radius: 6px;
+
+     
+   display: none;
+      width: 100%;
+      background-color: white;
+      z-index:2;
+     
+    }
+  
+    #maincontent {
+   
+   
+      z-index:0;
+      
+      width: 100%;
+     
+      background-color: white;
+    }
+  .linkname{
+    font-size: 14px;
+  }
+  }
+  
+
+
+  /* the min part or content */
+
+  
+button{
+    display: inline-block;
+    height:46px;
+    
+    border: 1px solid #EBEFF8;
+
+    
+
+}
+#profilimgdp{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+#editprofile{
+    border-radius:23px ;
+    background-color:#7A4B9E;
+}
+
+
+#changepsword{
+
+    border-radius:23px ;
+    background-color:#ED187D;
+}
+
+#removedp{
+    border-radius:23px;
+}
+#uploadnewwdp{
+    border-radius:23px ;
+}
+
+form input,#Stateedit,#country{
+    margin-left: 10px;
+    width: 70%;
+    height: 35px;
+    border:1px solid rgb(241, 216, 216); 
+    border-radius: 5px;
+    padding:2px;
+    font-size: 16px;
+    color: black;
+}
+  #countrycode{
+      width:70px
+  }
+  
+  @media (max-width:500px) {
+  
+    #profilimgdp{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+  }
+  
+  
+  
+  /*   footer */
+  
+  /* this for footer logo  */
+  .imagessforfooter {
+    display: inline-block;
+  
+    margin: 0px 0px 3px 4px;
+    width: 52px;
+    height: 52px;
+  
+  }
+  
+  .i1ii {
+    position: relative;
+    top: 1px;
+    left: 4px;
+  
+  
+  
+  }
+  
+  .i2ii {
+    position: relative;
+    bottom: 21px;
+    left: 8px;
+    z-index: 2;
+  
+  }
+  
+  .i3ii {
+  
+    position: relative;
+    bottom: 6px;
+    right: 25px;
+    background: #51469D;
+    width: 10px;
+    height: 17px;
+    z-index: 1;
+  
+  
+  
+  }
+  
+  .imgfooter {
+    width: 100px;
+    height: 50px;
+  
+    border-radius: 4px;
+  }
